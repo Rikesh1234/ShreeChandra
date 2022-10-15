@@ -1,0 +1,248 @@
+@media (max-width:1273px) {
+
+    .navbar{
+        height: 350px;
+    }
+
+    hr{
+      width: 95%;
+    }
+
+    .menu-btn{
+        position: relative;
+        display: block;
+        z-index: 999;
+        color: white;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .nav .menu li{
+        width: 100%;
+        height: 15%;
+        top: 50px;
+    }
+
+    .nav .menu li a{
+        position: relative;
+        top: -50px;
+    }
+
+    .nav .menu li .dropdown{
+        top:-5px;
+        right: 20px;
+    }
+
+    .menu-btn i{
+        transition: all 0.3s ease;
+        padding-right: 15px;
+        color: white;
+    }
+
+    .nav.sticky .menu-btn{
+        top: 20px;
+        color: black;
+    }
+
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .nav.sticky .menu-btn i{
+      color: #000;
+  }
+
+
+    .nav .menu
+    {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -5000px;
+        top:0;
+        width: 59%;
+        height: 100vh;
+        background-color: #000;
+        text-align: center;
+        align-items: center;
+        padding-top: 90px;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        min-height: 100%;
+    }
+
+    .nav .menu.active{
+        left: 0;
+    }
+
+    .nav .menu li
+    {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav.sticky .menu li
+    {
+        border: none;
+    }
+
+    .nav .menu li a
+    {
+      display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .nav.sticky .menu li a{
+        color: #fff;
+    }
+
+    .nav{
+      width: 100%;
+    }
+
+    .navContact{
+        display: inline-block;
+
+    }
+
+    .title{
+        width: 100%;
+        text-align: left;
+    }
+
+    .card-infos{
+        width: 100%;
+        justify-content:flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutus{
+        float: none;
+        width: 100%;
+        padding: 20px 0 15px 75px;
+      }
+
+      
+      .our-services{
+        float: none;
+        width: 100%;
+        padding: 0 0 20px 75px;
+      }
+      
+      .our-services-content ul li{
+        padding: 10px 5px;
+        width: 250px;
+      }
+
+        .service{
+            display: block;
+            width: calc(100% / 1);
+        
+      }
+
+      .contacts{
+        background-color: #265DF2;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 50px;
+      }
+
+      .contact .container{
+        display: block;
+        align-items: left ;
+      }
+
+      .contacts .container .cont-card{
+        padding-left: 0px;
+        padding: 5px 0;
+      }
+
+      .contact-container{
+        display: block;
+      }
+
+      .contact-container .left{
+        width: 100%;
+        padding-bottom: 50px;
+      }
+
+      .contact-container .right{
+        width: 70%;
+        padding-bottom: 50px;
+      }
+
+      .contact-container .right .first{
+        width: 50%;
+
+      }
+
+      .products{
+        display: block;
+      }
+
+      .products .left{
+        width: 95%;
+      }
+
+      .products .left .product{
+        height: 45px;
+      }
+
+      .products .left .product .button{
+        height: 33px;
+      }
+
+      .products .right .cntr{
+        height: 100vh;
+      }
+}
+
+@media (max-width:668px) {
+    .navbar{
+        height: 400px;
+        
+    }
+   
+    .navContact{
+        height: 75%;
+        padding-left: 0;
+        display: block;
+    }
+
+    .card-infos{
+        display: block;
+        width: 100%;
+        height: 15%;
+    }
+    
+    .Emails{
+        padding: 0px;
+        padding-left: 30px;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      
+      .cont{
+        
+        padding:0;
+        padding-left: 30px;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+
+      .clients-contans .max-width .card-container .client-card{
+        width: calc(100%/8);
+        margin: 10px;
+        padding: 10px;
+        border: #000 solid 1px;
+    }
+    .clients-contans .max-width .card-container .deactive{
+        width: calc(100%/8);
+    }
+    
+}

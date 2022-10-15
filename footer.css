@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+
+.hottags{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:99.2% ;
+  background-color: #292564;
+  position: absolute;
+  
+}
+
+.hottags-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: centemenur;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  width: 100%;
+}
+
+.hottags-card{
+  width: 20%;
+  height: 280px;
+  border-radius: 6px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hottags .hottags-container .hottags-card .cat-hottags a, 
+.hottags .hottags-container .hottags-card .prod-hottags a,
+.hottags .hottags-container .hottags-card .menu-hottags a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.hottags .hottags-container .hottags-card .cat-hottags a::after, 
+.hottags .hottags-container .hottags-card .prod-hottags a::after,
+.hottags .hottags-container .hottags-card .menu-hottags a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e48e24;
+  transform-origin: bottom right;
+  transition: all 0.25s ease-out;
+}
+
+.hottags .hottags-container .hottags-card .cat-hottags a:hover:after, 
+.hottags .hottags-container .hottags-card .prod-hottags a:hover:after,
+.hottags .hottags-container .hottags-card .menu-hottags a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hottags .hottags-card h2{
+  color: #8a9096;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.hottags .hottags-card .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hottags .hottags-card .social-media a{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  color: #8a9096;
+}
+
+.hottags .hottags-card .social-media .fa-instagram{
+  transition: all 0.3s ease;
+}
+
+.hottags .hottags-card .social-media .fa-twitter{
+  transition: all 0.3s ease;
+}
+
+
+.hottags .hottags-card .social-media .fa-instagram:hover {
+color: transparent;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+background-clip: text;
+-webkit-background-clip: text;
+}
+
+.hottags .hottags-card .social-media .fa-facebook{
+transition: all 0.3s ease;
+}
+
+.hottags .hottags-card .social-media .fa-facebook:hover {
+color: #3b5998;
+}
+
+.hottags .hottags-card .social-media .fa-twitter:hover{
+color: #00ACEE;
+}
